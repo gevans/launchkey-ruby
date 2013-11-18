@@ -68,6 +68,7 @@ module LaunchKey
     @client ||= new(config)
   end
 
-  delegate(*Configuration.public_instance_methods(false), to: :config)
+  delegate(*Configuration.public_instance_methods(false) - [:api_public_key], to: :config)
   delegate(*Client.public_instance_methods(false) - [:config], to: :client)
+  delegate(:api_public_key, to: :client)
 end # LaunchKey

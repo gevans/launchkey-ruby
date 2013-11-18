@@ -20,7 +20,7 @@ describe LaunchKey do
     end
   end
 
-  LaunchKey::Configuration.public_instance_methods(false).each do |method|
+  (LaunchKey::Configuration.public_instance_methods(false) - [:api_public_key]).each do |method|
 
     describe ".#{method}" do
 
