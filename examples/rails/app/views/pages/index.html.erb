@@ -1,0 +1,7 @@
+<% if launchkey_session %>
+  <h1>Welcome, <%= session[:launchkey_username] %>!</h1>
+  <%= link_to 'Sign out', sessions_path, method: :delete %>
+<% else %>
+  <h1>You are not signed in.</h1>
+  <%= link_to 'Sign in.', new_session_path %>
+<% end %>
