@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/LaunchKey/launchkey-ruby.png?branch=master)](https://travis-ci.org/LaunchKey/launchkey-ruby)
-
-# LaunchKey
+# LaunchKey Ruby [![Build Status](https://travis-ci.org/LaunchKey/launchkey-ruby.png?branch=master)](https://travis-ci.org/LaunchKey/launchkey-ruby)
 
 The passwordless user authentication gem for interacting with
 [LaunchKey](https://launchkey.com/)'s REST API.
